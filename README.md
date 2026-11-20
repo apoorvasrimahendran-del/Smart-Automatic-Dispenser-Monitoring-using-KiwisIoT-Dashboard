@@ -12,12 +12,19 @@ The IoT Smart automatic Dispenser Monitoring System  is an automated dispensing 
 - LED
 # Working Principle
 1.The IR sensor continuously detects nearby objects.
+
 2.When a hand is detected, the IR sensor sends a LOW signal to the NodeMCU.
+
 3.The NodeMCU activates the relay module.
+
 4.The water pump turns ON for 2 seconds.
+
 5.The LED turns ON during the dispensing operation.
+
 6.After 2 seconds, the pump and LED turn OFF.
+
 7.The dispenser status is updated on the KiwisIoT dashboard.
+
 8.The system waits until the detected object is removed before detecting another object.
 # Software Requirements
 - Arduino IDE
