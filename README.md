@@ -22,7 +22,7 @@ The system uses an ESP8266 NodeMCU and a relay module to control the water pump 
 - ESP8266WiFi Library
 - KiwisIoT Library
 # Project Images
-![Circuit](dispenser.jpeg)
+![Circuit](automatic.jpeg)
 ![Panel](status.png)
 # Source Code
 [View Code](dispenser.ino)
