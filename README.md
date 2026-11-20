@@ -1,7 +1,6 @@
 # Smart-Automatic-Dispenser-Monitoring-using-KiwisIoT-Dashboard
 # Project Overview
-The KiwisIoT Smart Water Pump Control System is an IoT-based project that allows users to remotely control a water pump using the KiwisIoT platform.
-The system uses an ESP8266 NodeMCU and a relay module to control the water pump through voice commands and text input from the KiwisIoT dashboard.
+The IoT Smart automatic Dispenser Monitoring System  is an automated dispensing system using IR sensor,NodeMCU,Relay module ,Water Pump and LED.When an object or hand is detected,the water pump automatically turns ON for few seconds.The LED indicates the dispensing status,and the activation status sent to the KiwisIoT Platform for Real-Time Monitoring.
 # Components Required
 - ESP8266 NodeMCU
 - 2-Channel Relay Module
@@ -9,13 +8,17 @@ The system uses an ESP8266 NodeMCU and a relay module to control the water pump 
 - Jumper Wires
 - Power Supply
 - Wi-Fi Connection
+- IRSensor
+- LED
 # Working Principle
-1. ESP8266 connects to the Wi-Fi network.
-2. KiwisIoT establishes communication with the NodeMCU.
-3. The user sends commands through the KiwisIoT dashboard.
-4. When the user enters "1" or says "Turn on motor", the relay activates.
-5. When the user enters "0" or says "Turn off motor", the relay deactivates.
-6. The water pump switches ON or OFF according to the received command.
+1.The IR sensor continuously detects nearby objects.
+2.When a hand is detected, the IR sensor sends a LOW signal to the NodeMCU.
+3.The NodeMCU activates the relay module.
+4.The water pump turns ON for 2 seconds.
+5.The LED turns ON during the dispensing operation.
+6.After 2 seconds, the pump and LED turn OFF.
+7.The dispenser status is updated on the KiwisIoT dashboard.
+8.The system waits until the detected object is removed before detecting another object.
 # Software Requirements
 - Arduino IDE
 - ESP8266 Board Package
