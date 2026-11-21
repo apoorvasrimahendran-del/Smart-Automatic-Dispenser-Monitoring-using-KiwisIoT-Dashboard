@@ -33,7 +33,7 @@ The IoT Smart automatic Dispenser Monitoring System  is an automated dispensing 
 - KiwisIoT Library
 # Project Images
 ![Circuit](automatic.jpeg)
-![Panel](status.png)
+![Panel](autodisp.jpeg)
 # Source Code
 [View Code](dispenser.ino)
 # Platform
